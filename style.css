@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+/*Styling of heading*/
+h1{
+    background-color: steelblue;
+    color: white;
+}
+hr{
+    border: 1px solid steelblue;
+}
+/*Styling of Form*/
+#heightInFeeet{
+    width: 3em;
+}
+#heightInches{
+    width: 3em;
+}
+#weightInKg{
+    width: 3.6em;
+}
+#sub{
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 1em;
+}
+input{
+border: 3px solid cadetblue;
+border-radius: 0.5em;
+}

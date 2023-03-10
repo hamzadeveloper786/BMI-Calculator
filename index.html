@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculate BMI (Body Mass Index)</h1>
+    <br>
+    <p>To calculate your BMI <br><br>
+    Follow these instructions:</p>
+    <h4>Enter your height in feet:</h4>
+    <h4>Enter your weight in Kilograms:</h4>
+    <br>
+    <hr>
+    <form onsubmit="calculateBMI();return false">
+     <label for="heightInFeeet">Enter your Height in feet:</label><br>
+     <input type="number" name="heightfeet" step="1" id="heightInFeeet" placeholder="feet" required min="0" max="10">
+     <input type="number" name="heightInches" step="1" id="heightInches" placeholder="inch" required min="0" max="11">
+     <br>
+     <br>
+     <label for="weightInKg">Enter your Weight in Kilograms:</label><br>
+     <input type="number" name="weightKg" id="weightInKg" step="0.1" required placeholder="  kg" min="0" max="200">
+     <br>
+     <br>
+     <input type="submit" id="sub" value="Calculate your BMI">
+    </form>
+    <hr>
+    <h2>Your BMI is</h2>
+    <h4 id="reult"></h4>
+    <p id="title"></p>
+    <p id="suggestion"></p>
+    <script src="./script.mjs"></script>
+</body>
+</html>
